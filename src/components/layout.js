@@ -3,15 +3,27 @@ import React from 'react';
 import './style.scss';
 import Helmet from './helmet';
 import Header from './header';
-import Midsection from './midsection';
 import Footer from './footer';
+import Background from './Background';
+
+import upperimg from '../images/upper.png';
+import lowerimg from '../images/lower.png';
+
+
 
 const Layout = ({ children }) => (
-	<div>
+	<div dir="rtl">
 		<Helmet />
-		<Header />
-		<Midsection />
-		<Footer />
+		<Background>
+		<div className="letter-box">
+			<div className="letter-content has-text-centered">
+				<img src={upperimg} alt="flowers header" /> 		
+				{children}
+				<img src={lowerimg} alt="flowers footer" /> 
+				<Header/>
+			</div>
+		</div>
+		</Background>
 	</div>
 );
 
