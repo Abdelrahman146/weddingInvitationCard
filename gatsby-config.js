@@ -2,10 +2,11 @@ module.exports = {
 	siteMetadata: {
 		title: 'بطاقة دعوة حفل زفاف عبدالرحمن و هبة',
 		author: 'Abdel Rahman',
-		description: 'بطاقة دعوة وتفاصيل حفل زفاف عبدالرحمن و هبة'
+		description: 'بطاقة دعوة وتفاصيل حفل زفاف عبدالرحمن و هبة',
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
+		`gatsby-plugin-sass`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {

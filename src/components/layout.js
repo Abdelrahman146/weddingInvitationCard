@@ -3,7 +3,6 @@ import React from 'react';
 import './style.scss';
 import Helmet from './helmet';
 import Header from './header';
-import Footer from './footer';
 import Background from './Background';
 
 import upperimg from '../images/upper.png';

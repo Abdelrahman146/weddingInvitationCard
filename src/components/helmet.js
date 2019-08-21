@@ -10,9 +10,7 @@ export default () => (
 					siteMetadata {
 						title
 						author
-						imageUrl
 						description
-						keywords
 					}
 				}
 			}
@@ -24,7 +22,6 @@ export default () => (
 					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 				/>
 				<meta name="description" content={data.site.siteMetadata.description} />
-				<meta name="keywords" content={data.site.siteMetadata.keywords} />
 				<title>{data.site.siteMetadata.title}</title>
 				<html lang="en" />
 				{/* Google / Search Engine Meta Tags */}
@@ -33,7 +30,6 @@ export default () => (
 					itemprop="description"
 					content={data.site.siteMetadata.description}
 				/>
-				<meta itemprop="image" content={data.site.siteMetadata.imageUrl} /> />
 			</Helmet>
 		)}
 	/>
